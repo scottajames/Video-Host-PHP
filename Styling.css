@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
 
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: #f1f1f1;
+	background-color: white;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 50px;
+}
+
+*:focus {
+	outline: none;
 }
 
 li {
@@ -14,72 +28,146 @@ a {
 	text-decoration: none;
 }
 
-li, a, button {
+button {
+	cursor: pointer;
+	background: none;
+	border: none;
+}
+
+li, a, button, h1 {
 	font-family: 'Open Sans', sans-serif;
 	color: white;
 	font-weight: 500;
-	cursor: pointer;
+}
+
+header {
+	white-space: nowrap;
 }
 
 #Head-Content {
-	position: absolute;
-	top: 0px;
 	width: 100%;
 	height: 100px;
-	background-color: #800080;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	border-bottom: 1px solid #CB2C52;
 }
 
-#Logo a {
-	float: left;
-	font-size: 36px;
+#Logo button {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	font-size: 1.875em;
 }
 
-#Signup-Login a {
-	float: right;
-	font-size: 18px;
-	margin-right: 20px;
-	transition-duration: 0.1s;
-}
-
-#Search {
+#Logo h1 {
 	position: relative;
-	top: 7px;
-	display: flex;
-  	justify-content: center;
+	top: -2px;
+	left: 0px;
+	font-family: 'Bungee', cursive;
+	font-size: 2.625em;
+	color: #CB2C52;
+	height: 100px;
+	width: 300px;
 }
 
 #Search input {
-	width: 350px;
-	padding-left: 10px;
-	font-size: 24px;
-	color: black;
-	border: none;
+	width: 400px;
+	height: 38px;
 	border-radius: 5px;
+	border: none;
+	padding-left: 30px;
+	font-size: 1.5em;
 }
 
 #Search button {
 	position: relative;
-	left: -33px;
-	font-size: 24px;
-	color: white;
-	border: none;
-	background: #650565;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+	top: 1px;
+	left: -39px;
+	color: grey;
+	font-size: 1.5em;
 }
 
-#top-Nav a {
-	font-size: 23px;
-	float: right;
-	margin-right: 30px;
-	transition-duration: 0.1s;
-	overflow: hidden;
+#Login a {
+	position: relative;
+	top: -20px;
+	left: -5px;
+	font-size: 1.5em;
+	background-color: #CC2C52;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 50px;
 }
 
-#top-Nav a:hover {
-	border-bottom: 1px solid white;
+#Login a:hover {
+	background-color: #D04163;
 }
 
-*:focus {
-	outline: none;
+#Login button {
+	position: relative;
+	top: 14px;
+	left: -85px;
+	font-size: 1.5em;
+}
+
+#Navigation {
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	width: 300px;
+	height: 100%;
+	background-color: black;
+	border-right: 1px solid #CB2C52;
+	text-align: left;
+}
+
+#Navigation h1 {
+	position: relative;
+	top: 50px;
+	left: 20px;
+	color: #CB2C52;
+}
+
+#Navigation li {
+	position: relative;
+	top: 50px;
+	left: -40px;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	width: 300px;
+}
+
+#Navigation a {
+	position: relative;
+	top: 0px;
+	left: 80px;
+	display: inline-flex;
+	margin: 10px;
+}
+
+#Navigation a:hover  i {
+	color: #CB2C52;
+}
+
+#Navigation i {
+	position: relative;
+	left: -40px;
+}
+
+#Navigation button {
+	position: relative;
+	top: 75px;
+	left: 40px;
+	font-size: 1.5em;
+	background-color: #CC2C52;
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-radius: 50px;
+}
+
+#Navigation button:hover {
+	background-color: #D04163;
 }

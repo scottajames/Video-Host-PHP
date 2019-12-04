@@ -4,7 +4,13 @@
 	<head>
 		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="Styling.css">
+		<meta charset="UTF-8">
+
+		<title>Daddy's Boy</title>
 
 	</head>
 
@@ -14,21 +20,11 @@
 
 			<div id="Head-Content">
 
-			<title>Daddy's Boy</title>
-
 			<div id="Logo">
 				<nav>
 					<ul>
-						<li><a href="#"><b>DADDYS</b>BOY</a></li>
-					</ul>
-				</nav>
-			</div>
-
-			<div id="Signup-Login">
-				<nav>
-					<ul>
-						<li><a href="#">Signup</a></li>
-						<li><a href="#">Login</a></li>
+						<button onclick="navBar()"><i class="fa fa-bars"></i></button>
+						<li><a href="#"><h1>DADDY'S BOY</h1></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -38,18 +34,41 @@
       			<button type="submit"><i class="fa fa-search"></i></button>
       		</div>
 
-			<div id="top-Nav">
+      		<div id="Login">
+      			<nav>
+      				<ul>
+      					<button>Login</button>
+      					<li><a href="#">Sign Up</a></li>
+      				</ul>
+      			</nav>
+      		</div>
+
+      		<div id="Navigation">
 				<nav>
 					<ul>
-						<li><a href="#">SHOP</a></li>
-						<li><a href="#">LIVECAM</a></li>
-						<li><a href="#">CATEGORIES</a></li>
-						<li><a href="index.php">HOME</a></li>
+						<h1>MAIN</h1>
+						<li><a href="#"><i class="material-icons">&#xe88a;</i> Home</i></a></li>
+						<li><a href="#"><i class="material-icons">&#xe04a;</i> Videos</a></li>
+						<li><a href="#"><i class="material-icons">&#xe53b;</i> Categories</a></li>
+						<li><a href="#"><i class="material-icons">&#xe3b0;</i> Live Cams</a></li>
+						<li><a href="#"><i class="material-icons">&#xe547;</i> Store</a></li>
+
+						<button>Login</button>
 					</ul>
 				</nav>
 			</div>
 		</div>
 
+		<script>
+			function navBar(){
+    			var nav = document.getElementById("Navigation");
+    				if(nav.style.display === "none"){
+        				nav.style.display = "block";
+    				}else{
+        				nav.style.display = "none";
+    				}
+				}
+			</script>
 		</header>
 	</body>
 </html>
