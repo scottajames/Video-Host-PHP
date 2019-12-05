@@ -63,13 +63,8 @@ header {
 	color: #CB2C52;
 }
 
-#Button button {
-	font-size: 2em;
-}
-
 #Search input {
 	position: relative;
-	top: 20px;
 	left: 10px;
 	width: 240px;
 	border: none;
@@ -84,11 +79,17 @@ header {
 
 #Search button {
 	position: relative;
-	top: 20px;
 	left: -25px;
 	font-size: 14px;
 	color: grey;
-	}
+}
+
+
+#Button button {
+	position: relative;
+	top: 20px;
+	font-size: 2em;
+}
 
 #Login {
 	position: relative;
