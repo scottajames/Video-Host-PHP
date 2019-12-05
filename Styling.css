@@ -4,7 +4,9 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: white;
+	background-color: black;
+	width: 100%;
+	height: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -45,129 +47,119 @@ header {
 }
 
 #Head-Content {
-	width: 100%;
-	height: 100px;
-	display: inline-flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: black;
-	border-bottom: 1px solid #CB2C52;
-}
-
-#Logo button {
 	position: absolute;
-	top: 30px;
 	left: 0px;
-	font-size: 1.875em;
+	top: 0px;
+	width: 280px;
+	text-align: center;
+
 }
 
 #Logo h1 {
 	position: relative;
-	top: -2px;
-	left: 0px;
+	top: 0px;
+	font-size: 2em;
 	font-family: 'Bungee', cursive;
-	font-size: 2.625em;
 	color: #CB2C52;
-	height: 100px;
-	width: 300px;
+}
+
+#Button button {
+	font-size: 2em;
 }
 
 #Search input {
-	width: 400px;
-	height: 38px;
-	border-radius: 5px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+	width: 240px;
 	border: none;
-	padding-left: 30px;
-	font-size: 1.5em;
+	border-radius: 5px;
+	border: 2px solid grey;
+	padding: 5px;
+	padding-left: 10px;
+	font-size: 14px;
+	background-color: #303030;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #Search button {
 	position: relative;
-	top: 1px;
-	left: -39px;
+	top: 20px;
+	left: -25px;
+	font-size: 14px;
 	color: grey;
-	font-size: 1.5em;
-}
+	}
 
-#Login a {
+#Login {
 	position: relative;
-	top: -20px;
-	left: -5px;
-	font-size: 1.5em;
-	background-color: #CC2C52;
-	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-radius: 50px;
-}
-
-#Login a:hover {
-	background-color: #D04163;
+	top: 40px;
+	border-top: 1px solid #303030;
 }
 
 #Login button {
 	position: relative;
-	top: 14px;
-	left: -85px;
+	top: 20px;
 	font-size: 1.5em;
+	color: white;
+	background-color: #CB2C52;
+	padding: 10px;
+	padding-left: 75px;
+	padding-right: 75px;
+	border-radius: 5px;
+	text-decoration: underline;
 }
 
-#Navigation {
-	position: absolute;
-	top: 100px;
-	left: 0px;
-	width: 300px;
-	height: 100%;
-	background-color: black;
-	border-right: 1px solid #CB2C52;
+#Login button:hover {
+	background-color: #D04163;
+}
+
+#Main-Nav {
+	position: relative;
+	top: 60px;
 	text-align: left;
 }
 
-#Navigation h1 {
+#Main-Nav h1 {
 	position: relative;
-	top: 50px;
-	left: 20px;
-	color: #CB2C52;
-}
-
-#Navigation li {
-	position: relative;
-	top: 50px;
-	left: -40px;
-	border-top: 1px solid #333;
-	border-bottom: 1px solid #333;
-	width: 300px;
-}
-
-#Navigation a {
-	position: relative;
-	top: 0px;
 	left: 80px;
-	display: inline-flex;
-	margin: 10px;
-}
-
-#Navigation a:hover  i {
 	color: #CB2C52;
 }
 
-#Navigation i {
+#Main-Nav a {
 	position: relative;
-	left: -40px;
+	left: 80px;
+	font-size: 1.25em;
+
 }
 
-#Navigation button {
+#Main-Nav i {
 	position: relative;
-	top: 75px;
-	left: 40px;
+	left: -60px;
+}
+
+#Main-Nav a:hover i {
+	color: #D04163;
+}
+
+#Signup {
+	position: relative;
+	top: 80px;
+	border-top: 1px solid #303030;
+}
+
+#Signup a {
+	position: relative;
+	top: 30px;
 	font-size: 1.5em;
-	background-color: #CC2C52;
+	color: white;
+	background-color: #CB2C52;
 	padding: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
-	border-radius: 50px;
+	padding-left: 75px;
+	padding-right: 75px;
+	border-radius: 5px;
+	text-decoration: underline;
 }
 
-#Navigation button:hover {
+#Signup a:hover {
 	background-color: #D04163;
 }
