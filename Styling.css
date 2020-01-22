@@ -4,9 +4,10 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background-color: black;
+	background-color: #030303;
 	width: 100%;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -44,6 +45,7 @@ li, a, button, h1 {
 
 header {
 	white-space: nowrap;
+	position: fixed;
 }
 
 #Head-Content {
@@ -123,7 +125,7 @@ header {
 
 #Main-Nav h1 {
 	position: relative;
-	left: 80px;
+	left: 100px;
 	color: #CB2C52;
 }
 
@@ -164,4 +166,27 @@ header {
 
 #Signup a:hover {
 	background-color: #D04163;
+}
+
+
+#Body-Content {
+	height: auto;
+	position: relative;
+	top: 100px;
+	left: 350px;
+	width: 90%;
+}
+
+#Body-Content a {
+	float: left;
+	display: inline-block;
+	margin: 30px;
+	width: 300px;
+	height: 320px;
+	text-align: center;
+}
+
+#Body-Content img {
+	width: 320px;
+	display: inline-block;
 }
