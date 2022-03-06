@@ -8,7 +8,7 @@
 			<div id="Body-Content">
 				<div id="Featured" style="text-align: left;"><h2>Featured</h2>
 					<?php
-					$sql = "SELECT * FROM export_projects ORDER BY RAND() limit 4";
+					$sql = "SELECT * FROM export_projects ORDER BY RAND() limit 8";
 					$result = mysqli_query($conn, $sql);
 					$resultCheck = mysqli_num_rows($result);
 
